@@ -37,9 +37,9 @@
 <meta property="og:image" content="http://yoursite.com/2019/04/01/3、4月份MuddyWater组织攻击活动梳理/powerstats_C2post.png">
 <meta property="og:image" content="http://yoursite.com/2019/04/01/3、4月份MuddyWater组织攻击活动梳理/powerstats_Command&Ctl.png">
 <meta property="og:image" content="http://yoursite.com/2019/04/01/3、4月份MuddyWater组织攻击活动梳理/group_config.png">
-<meta property="og:image" content="http://yoursite.com/2019/04/01/3、4月份MuddyWater组织攻击活动梳理/twitter_illkikkyou.png">
+<meta property="og:image" content="http://yoursite.com/2019/04/01/3、4月份MuddyWater组织攻击活动梳理/twitter_illkillyou.png">
 <meta property="og:image" content="http://yoursite.com/2019/04/01/3、4月份MuddyWater组织攻击活动梳理/new_powerstats.png">
-<meta property="og:updated_time" content="2019-07-02T06:46:25.785Z">
+<meta property="og:updated_time" content="2019-07-02T07:16:05.438Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="3、4月份MuddyWater组织攻击活动梳理">
 <meta name="twitter:description" content="3、4月份MuddyWater组织攻击活动梳理  &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;自3月底，MuddyWater组织开始在诱饵文档中使用远程模板注入执行宏的技术持续攻击巴基斯坦、伊拉克、土耳其和约旦等中东和南亚国家，这些诱饵文档经过精心的社会工程学手段制作，具有很强的针对性和欺骗性。远程模板包含的恶意宏被执行后，将提取和运行隐藏在窗体控件中的主体功能宏，实现权限维持和本地释放编码过">
@@ -181,7 +181,7 @@
 <table><br><tr><th>指令</th><th>功能</th></tr><br><tr><th>upload</th><th>下载文件至本地</th></tr><br><tr><th>cmd</th><th>cmd命令运行回传命令</th></tr><br><tr><th>b64</th><th>base64解码回传数据，调用powershell执行</th></tr><br><tr><th>其他</th><th>直接调用powershell执行回传数据</th></tr><br></table><br><center>表2-4 C2信息</center><br><table><br><tr><th>域名</th><th>IP解析</th><th>地理位置</th></tr><br><tr><th>gladiyator.tk</th><th>192.95.21.28</th><th>加拿大</th></tr><br></table>
 
 <p>4.组织关联与画像<br>&nbsp;&nbsp;在2019年3月至今我们观测到的一系列针对巴基斯坦、土耳其、伊拉克和约旦等国家的网络攻击活动中，诱饵文档最后投递的载荷依然为其专用后门POWERSTATS，本次发现的大部分POWERSTATS后门，同近一个月来国内外多家安全厂商及多次开源情报曝光过的版本，在加密函数和指令功能上几乎没有什么变化，甚至连加密密钥都一致，仅C2被替换掉。这说明该组织几乎不惧怕安全厂商对其进行的曝光，比较符合该组织一贯嚣张的作风：<br><img src="/2019/04/01/3、4月份MuddyWater组织攻击活动梳理/group_config.png"></p>
-<p><center>图4-1后门配置信息中的加密密钥完全一致</center><br><img src="/2019/04/01/3、4月份MuddyWater组织攻击活动梳理/twitter_illkikkyou.png"></p>
+<p><center>图4-1后门配置信息中的加密密钥完全一致</center><br><img src="/2019/04/01/3、4月份MuddyWater组织攻击活动梳理/twitter_illkillyou.png"></p>
 <p><center>图4-2 2018年国外研究人员在MuddyWater的C2回传中收到了对方的警告</center><br>&nbsp;&nbsp;而在针对土耳其的样例中（2.1小节），我们发现了新版本的POWERSTATS后门，该版本最早在3月20日的开源情报中被提及[1]，360威胁情报中心也对其进行了分析[2]：<br><img src="/2019/04/01/3、4月份MuddyWater组织攻击活动梳理/new_powerstats.png"></p>
 <p><center>图4-3 新版本POWERSTATS后门的通讯方式</center><br>&nbsp;&nbsp;当前捕获的诱饵文档，在构造上延续了MuddyWater组织的一贯风格：精心的社会工程学手段，伪装成来自政府官方或本土知名公司，构造模糊的图文背景或无用的交互按钮诱骗受害者启用恶意宏。在这一点上，MuddyWater组织显得独树一帜。 </p>
 <p><center>表3-1 Muddywater组织特征画像</center></p>
