@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="3、4月份MuddyWater组织攻击活动梳理  &amp;nbsp;&amp;nbsp;自3月底，MuddyWater组织开始在诱饵文档中使用远程模板注入执行宏的技术持续攻击巴基斯坦、伊拉克、土耳其和约旦等中东和南亚国家，这些诱饵文档经过精心的社会工程学手段制作，具有很强的针对性和欺骗性。远程模板包含的恶意宏被执行后，将提取和运行隐藏在窗体控件中的主体功能宏，实现权限维持和本地释放编码过的Powershell脚">
+<meta name="keywords" content="MuddyWater,APT">
+<meta property="og:type" content="article">
+<meta property="og:title" content="3、4月份MuddyWater组织攻击活动梳理">
+<meta property="og:url" content="http://yoursite.com/2019/04/01/3、4月份MuddyWater组织攻击活动梳理/index.html">
+<meta property="og:site_name" content="The Cyber_Hunter">
+<meta property="og:description" content="3、4月份MuddyWater组织攻击活动梳理  &amp;nbsp;&amp;nbsp;自3月底，MuddyWater组织开始在诱饵文档中使用远程模板注入执行宏的技术持续攻击巴基斯坦、伊拉克、土耳其和约旦等中东和南亚国家，这些诱饵文档经过精心的社会工程学手段制作，具有很强的针对性和欺骗性。远程模板包含的恶意宏被执行后，将提取和运行隐藏在窗体控件中的主体功能宏，实现权限维持和本地释放编码过的Powershell脚">
+<meta property="og:updated_time" content="2019-07-02T03:21:05.141Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="3、4月份MuddyWater组织攻击活动梳理">
+<meta name="twitter:description" content="3、4月份MuddyWater组织攻击活动梳理  &amp;nbsp;&amp;nbsp;自3月底，MuddyWater组织开始在诱饵文档中使用远程模板注入执行宏的技术持续攻击巴基斯坦、伊拉克、土耳其和约旦等中东和南亚国家，这些诱饵文档经过精心的社会工程学手段制作，具有很强的针对性和欺骗性。远程模板包含的恶意宏被执行后，将提取和运行隐藏在窗体控件中的主体功能宏，实现权限维持和本地释放编码过的Powershell脚">
+    
+    
+        
+          
+              <link rel="shortcut icon" href="/images/favicon.ico">
+          
+        
+        
+          
+            <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+          
+        
+        
+          
+            <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+          
+        
+    
+    <!-- title -->
+    <title>3、4月份MuddyWater组织攻击活动梳理</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- rss -->
+    
+    
+</head>
+
+<body class="max-width mx-auto px3">
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="/projects_url">Projects</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        
+        <li><a class="icon" href="/2018/10/29/CVE-2014-635-ppsx-sample/"><i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" href="#"><i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=http://yoursite.com/2019/04/01/3、4月份MuddyWater组织攻击活动梳理/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=http://yoursite.com/2019/04/01/3、4月份MuddyWater组织攻击活动梳理/&text=3、4月份MuddyWater组织攻击活动梳理"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://yoursite.com/2019/04/01/3、4月份MuddyWater组织攻击活动梳理/&title=3、4月份MuddyWater组织攻击活动梳理"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://yoursite.com/2019/04/01/3、4月份MuddyWater组织攻击活动梳理/&is_video=false&description=3、4月份MuddyWater组织攻击活动梳理"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=3、4月份MuddyWater组织攻击活动梳理&body=Check out this article: http://yoursite.com/2019/04/01/3、4月份MuddyWater组织攻击活动梳理/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=http://yoursite.com/2019/04/01/3、4月份MuddyWater组织攻击活动梳理/&title=3、4月份MuddyWater组织攻击活动梳理"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=http://yoursite.com/2019/04/01/3、4月份MuddyWater组织攻击活动梳理/&title=3、4月份MuddyWater组织攻击活动梳理"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://yoursite.com/2019/04/01/3、4月份MuddyWater组织攻击活动梳理/&title=3、4月份MuddyWater组织攻击活动梳理"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=http://yoursite.com/2019/04/01/3、4月份MuddyWater组织攻击活动梳理/&title=3、4月份MuddyWater组织攻击活动梳理"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://yoursite.com/2019/04/01/3、4月份MuddyWater组织攻击活动梳理/&name=3、4月份MuddyWater组织攻击活动梳理&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    <div id="toc">
+      
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index my4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        3、4月份MuddyWater组织攻击活动梳理
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">Kasymobv Lee</span>
+      </span>
+      
+    <div class="postdate">
+        <time datetime="2019-04-01T06:15:00.000Z" itemprop="datePublished">2019-04-01</time>
+    </div>
+
+
+      
+    <div class="article-tag">
+        <i class="fas fa-tag"></i>
+        <a class="tag-link" href="/tags/APT/">APT</a>, <a class="tag-link" href="/tags/MuddyWater/">MuddyWater</a>
+    </div>
+
+
+    </div>
+  </header>
+  
+
+  <div class="content" itemprop="articleBody">
+    <center>3、4月份MuddyWater组织攻击活动梳理</center>
+
+<p>&nbsp;&nbsp;自3月底，MuddyWater组织开始在诱饵文档中使用远程模板注入执行宏的技术持续攻击巴基斯坦、伊拉克、土耳其和约旦等中东和南亚国家，这些诱饵文档经过精心的社会工程学手段制作，具有很强的针对性和欺骗性。远程模板包含的恶意宏被执行后，将提取和运行隐藏在窗体控件中的主体功能宏，实现权限维持和本地释放编码过的Powershell脚本。该Powershell脚本被运行后，在内存中经过多层解混淆，最终展示出完整的后门功能。通过代码比对，我们最终确认了该Powershell后门为MuddyWater组织的专用木马POWERSTATS。MuddyWater组织为十分活跃的具有地缘政治动机的APT组织，主要针对的目标为中东、南亚和欧美国家，主要攻击意图为窃密和情报刺探。  </p>
+
+  </div>
+</article>
+
+
+
+    </div>
+    
+      <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="/projects_url">Projects</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      
+    </div>
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=http://yoursite.com/2019/04/01/3、4月份MuddyWater组织攻击活动梳理/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=http://yoursite.com/2019/04/01/3、4月份MuddyWater组织攻击活动梳理/&text=3、4月份MuddyWater组织攻击活动梳理"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://yoursite.com/2019/04/01/3、4月份MuddyWater组织攻击活动梳理/&title=3、4月份MuddyWater组织攻击活动梳理"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://yoursite.com/2019/04/01/3、4月份MuddyWater组织攻击活动梳理/&is_video=false&description=3、4月份MuddyWater组织攻击活动梳理"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=3、4月份MuddyWater组织攻击活动梳理&body=Check out this article: http://yoursite.com/2019/04/01/3、4月份MuddyWater组织攻击活动梳理/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=http://yoursite.com/2019/04/01/3、4月份MuddyWater组织攻击活动梳理/&title=3、4月份MuddyWater组织攻击活动梳理"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=http://yoursite.com/2019/04/01/3、4月份MuddyWater组织攻击活动梳理/&title=3、4月份MuddyWater组织攻击活动梳理"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://yoursite.com/2019/04/01/3、4月份MuddyWater组织攻击活动梳理/&title=3、4月份MuddyWater组织攻击活动梳理"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=http://yoursite.com/2019/04/01/3、4月份MuddyWater组织攻击活动梳理/&title=3、4月份MuddyWater组织攻击活动梳理"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://yoursite.com/2019/04/01/3、4月份MuddyWater组织攻击活动梳理/&name=3、4月份MuddyWater组织攻击活动梳理&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+    
+    <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy; 2019 Kasymobv Lee
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="/projects_url">Projects</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+<script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+</html>
+<!-- styles -->
+<link rel="stylesheet" href="/lib/font-awesome/css/fontawesome-all.min.css">
+<link rel="stylesheet" href="/lib/justified-gallery/css/justifiedGallery.min.css">
+
+<!-- jquery -->
+<script src="/lib/jquery/jquery.min.js"></script>
+<script src="/lib/justified-gallery/js/jquery.justifiedGallery.min.js"></script>
+<script src="/js/main.js"></script>
+<!-- search -->
+
+<!-- Google Analytics -->
+
+<!-- Disqus Comments -->
+
+
